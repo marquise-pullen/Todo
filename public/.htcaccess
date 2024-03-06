@@ -1,0 +1,7 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase elvis.rowan.edu/~pullenm/TestList/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . elvis.rowan.edu/~pullenm/TestList/index.html [L]
