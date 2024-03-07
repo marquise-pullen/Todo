@@ -1,13 +1,14 @@
 import React from 'react';
+import './TodoForm.css'
 
-const TodoForm = ({ newTask, onChange, onClick }) => {
+const TodoForm = ({ newTodo, onChange, onClick }) => {
 
-    return <div className="task-input">
+    return <div className="todo-input">
         <input
             type="text"
-            value={newTask}
+            value={newTodo}
             onChange={onChange}
-            placeholder="Add a new task"
+            placeholder="Add a new todo"
         />
         <button onClick={onClick}>Add</button>
     </div>

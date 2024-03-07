@@ -10,7 +10,10 @@ function App() {
   const [newToDo, setNewToDo] = useState('');
 
   useEffect(() => {
-    setCount(toDos.length);
+
+    let tempCount = toDos.length;
+    setCount(tempCount);
+    console.log(tempCount)
   }, [toDos]); // Empty dependency array ensures this effect runs only once
 
   const addToDo = () => {
